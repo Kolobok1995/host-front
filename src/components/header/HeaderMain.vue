@@ -1,31 +1,19 @@
 <template>
-    <div class="header-main container-fluid">
-        <HeaderTopBar />
+    <div class="header-main mb-4">
+        <HeaderTop />
         <HeaderMiddle />
     </div>
 </template>
 
 <script>
-import HeaderTopBar from '@/components/header/HeaderTopBar'
-import HeaderMiddle from '@/components/header/HeaderMiddle'
+    import HeaderTop from '@/components/header/HeaderTop';
+    import HeaderMiddle from '@/components/header/HeaderMiddle';
 
-export default {
-    name: 'HeaderMain',
-    components: {
-        HeaderTopBar,
-        HeaderMiddle
+    export default {
+        name: 'HeaderMain',
+        components: {
+            HeaderTop,
+            HeaderMiddle
+        }
     }
-}
 </script>
-
-<style>
-    dl, ol, ul {
-        margin-top: 0;
-        margin-bottom: 0;
-        padding: 0;
-    }
-
-    .container-fluid {
-        padding: 0 25px
-    }
-</style>

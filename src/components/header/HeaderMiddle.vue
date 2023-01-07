@@ -1,70 +1,73 @@
 <template>
-    <div class="header-middle  ">
+    <div class="middle-header main-container container mt-2 nb-2">
         <div class="logo-block">
             <img class="logo" src="@/assets/logo.png" alt="">
         </div>
 
-        <div class="header-middle-search-block">
-            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
-            <div class="input-group-prepend">
-                <button class="btn btn-outline-secondary" type="button">Button</button>
+        <div class="serach-block">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Поиск по товарам" aria-label="Поиск по товарам" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">Поиск</button>
+                </div>
             </div>
-        </div>
-
-        <div class="header-middle-toolbar">
-            <div>
-                <i class="fa fa-user-circle" aria-hidden="true"></i>
-            </div>
-            <div>
-                <i class="fa fa-heart" aria-hidden="true"></i>
-            </div>
-            <div>
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            </div>
-
         </div>
         
+        <div class="middle-header-toolbar-block">
+            <div>
+                <i class='far fa-user-circle'></i>
+            </div>
+            <div>
+                <i class='far fa-heart'></i>
+            </div>
+            <div class="cart-block">
+                <i class='fas fa-shopping-basket'></i>
+            </div>
+        </div>
     </div>
 </template>
 
 <style>
-  .header-middle {
-        height: 100px;
-        justify-content: space-around;
+   .middle-header {
         display: flex;
-    }
-
-    .header-middle > div {
-        justify-content: center;
-        margin: 0 10px;
+        align-items: center;
     }
 
     .logo-block {
-        width: 300px;
-
-        display: flex;
-        align-items: center;
+        height: 60px;
+        margin: 15px 0;
+        position: relative;
+        left: -4px;
+        width: 200px;
     }
 
     .logo {
-        width: 100%;
+        display: block;
+        height: 100%;
     }
 
-    .header-middle-search-block {
-        display: flex;
+    .serach-block {
         flex-grow: 1;
-        align-items: center;
-    }
-
-    .header-middle-toolbar {
-        display: flex;
-        align-items: center;
+        margin: auto 40px;
     }
     
-    .header-middle-toolbar i {
-        font-size: 35px;
-        margin: 15px;
-        
+    .middle-header-toolbar-block {
+        display: flex; 
+        justify-content: flex-end;
+        font-size: 30px;
+        color: #5025a7;
+    }
+    .middle-header-toolbar-block>div {
+        margin-right: 20px;
+    }
+
+    input.form-control, button.btn.btn-outline-secondary {
+        border: 1px solid #5e31b8;
+        color: #555
+    }
+
+    .cart-block {
+        font-size: 31px;
     }
 
 </style>
