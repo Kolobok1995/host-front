@@ -106,7 +106,7 @@
     }
 
     .main-page {
-        display: flex;
+        @include flex-column;
     }
 
     .main-page .card {
@@ -115,14 +115,11 @@
 
     .pain-page-left {
         width: 295px;
-        display: flex;
-        flex-flow: column;
+        @include flex-column;
     }
 
     .pain-page-left ul, .pain-page-left li {
-        display: flex;
-        padding: 1px;
-        flex-flow: column;
+        @include flex-column(flex-start);
         font-size: 16px;
         margin-bottom: 10px;
     }
@@ -134,9 +131,8 @@
     /* --- */
 
     .tile-block {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-row;
+        flex-wrap: wrap;
     }
     
     .tile-block>div {

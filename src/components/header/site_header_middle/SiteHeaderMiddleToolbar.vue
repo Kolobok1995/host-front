@@ -26,7 +26,7 @@ export default {
 
 <style scoped lang="scss">
     .middle-header-toolbar-block {
-        @include flex-row;
+        @include flex-row(flex-end);
         font-size: 30px;
         color: $baseColor;
     }

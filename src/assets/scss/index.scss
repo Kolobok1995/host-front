@@ -3,9 +3,9 @@
     margin: 0;
 }
 
-a {
+//a {
     //color: $baseDarkColor;
-}
+//}
 
 .main-container {
     max-width: 1360px;  
@@ -15,22 +15,22 @@ a {
 input.form-control, 
 .btn-outline-info {
     border: 1px solid $baseColor;
-    color: $baseColor
-}
-
-.btn-outline-success:not(:disabled):not(.disabled).active,
-.btn-outline-success:not(:disabled):not(.disabled):active {
     color: $baseColor;
-    border-color: $baseDarkColor;
-    background-color: $baseColor;
-}
+    
+    &:hover, &:not(:disabled):not(.disabled):active {
+        color: $baseColorText;
+        background-color: $baseColor;
+        border-color: $baseDarkColor;
+    }
 
-.btn-outline-info:hover, .btn-outline-info:not(:disabled):not(.disabled):active {
-    background-color: $baseColor;
-    color: $baseColorText;
-    border-color: $baseDarkColor;
-}
+    &:focus, &:not(:disabled):not(.disabled):active:focus {
+        box-shadow: $baseBoxShadow;
+    }
 
-.btn-outline-info:focus, .btn-outline-info:not(:disabled):not(.disabled):active:focus {
-    box-shadow: $baseBoxShadow;
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled):active {
+        color: #fff;
+        border-color: $baseDarkColor;
+        background-color: $baseColor;
+    }
 }

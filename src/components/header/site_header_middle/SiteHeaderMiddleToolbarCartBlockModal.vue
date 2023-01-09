@@ -67,7 +67,7 @@
 
 <style scoped lang="scss">
     .open-cart.open{
-        display: flex;
+        @include flex-row;
     }
 
     .open-cart {
@@ -84,8 +84,7 @@
         min-height: 250px;
 
         .cart-toolbar-tool-price {
-            display: flex;
-            justify-content: space-between;
+            @include flex-row(space-between);
             margin: 0 15px;
         }
         .cart-toolbar-buttons>* {

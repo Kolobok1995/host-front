@@ -1,16 +1,15 @@
-// Основные переменные
-
 $baseColor: #9679cf;
 $baseDarkColor: #341a6b;
 $baseColorText: #ffe5a8;
 $baseBoxShadow: 0 0 0 0.2rem rgba(150, 121, 207, 0.3);
 
-@mixin flex-row {
+@mixin flex-row ($position:flex-start, $align:flex-start) {
     display: flex;
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
     flex-flow: row nowrap;
+    justify-content: $position;
 }
 
 @mixin toolbar-badge {
@@ -20,4 +19,12 @@ $baseBoxShadow: 0 0 0 0.2rem rgba(150, 121, 207, 0.3);
     top: -3px;
     background-color: $baseColorText !important;
     color: $baseColor;
+}
+
+@mixin flex-column ($position:flex-start, $align:flex-start) {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-flow: column nowrap;
+    justify-content: $position;
+    align-items: $align;
 }

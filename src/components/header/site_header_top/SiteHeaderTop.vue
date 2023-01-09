@@ -22,7 +22,7 @@
 
 <style scoped lang="scss">
    .top-menu-container {
-        display: flex;
+        @include flex-row;
         height: 30px;
     }
 
@@ -43,8 +43,7 @@
         }
 
         .container-right {
-            @include flex-row;
-            justify-content: flex-end;
+            @include flex-row(flex-end);
             width: 50%;
             
             .link-block {
