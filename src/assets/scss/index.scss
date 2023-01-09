@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    //color: $baseDarkColor;
+}
+
+.main-container {
+    max-width: 1360px;  
+    position: relative; 
+}
+
+input.form-control, 
+.btn-outline-info {
+    border: 1px solid $baseColor;
+    color: $baseColor
+}
+
+.btn-outline-success:not(:disabled):not(.disabled).active,
+.btn-outline-success:not(:disabled):not(.disabled):active {
+    color: $baseColor;
+    border-color: $baseDarkColor;
+    background-color: $baseColor;
+}
+
+.btn-outline-info:hover, .btn-outline-info:not(:disabled):not(.disabled):active {
+    background-color: $baseColor;
+    color: $baseColorText;
+    border-color: $baseDarkColor;
+}
+
+.btn-outline-info:focus, .btn-outline-info:not(:disabled):not(.disabled):active:focus {
+    box-shadow: $baseBoxShadow;
+}

@@ -1,0 +1,23 @@
+// Основные переменные
+
+$baseColor: #9679cf;
+$baseDarkColor: #341a6b;
+$baseColorText: #ffe5a8;
+$baseBoxShadow: 0 0 0 0.2rem rgba(150, 121, 207, 0.3);
+
+@mixin flex-row {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-flow: row nowrap;
+}
+
+@mixin toolbar-badge {
+    font-size: 12px;
+    position: absolute;
+    right: 8px;
+    top: -3px;
+    background-color: $baseColorText !important;
+    color: $baseColor;
+}

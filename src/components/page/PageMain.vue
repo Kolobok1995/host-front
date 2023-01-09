@@ -100,17 +100,9 @@
     </div>    
 </template>
 
-<style>
+<style scoped lang="scss">
     .catalog-more {
-        color: #9679cf;
-        border-color: #9679cf;
         max-width: 180px;
-    }
-    .btn-outline-success:not(:disabled):not(.disabled).active,
-    .btn-outline-success:not(:disabled):not(.disabled):active {
-        color: #f8dba7;
-        border-color: #643eb1;
-        background-color: #643eb1;
     }
 
     .main-page {
@@ -118,7 +110,7 @@
     }
 
     .main-page .card {
-        border-color: #9679cf;
+        border-color: $baseColor;
     }
 
     .pain-page-left {
@@ -129,9 +121,10 @@
 
     .pain-page-left ul, .pain-page-left li {
         display: flex;
-        padding: 0;
+        padding: 1px;
         flex-flow: column;
         font-size: 16px;
+        margin-bottom: 10px;
     }
 
     .pain-page-right {

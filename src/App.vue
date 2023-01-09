@@ -1,28 +1,22 @@
 <template>
   <div id="app">
-    <HeaderMain />
+    <SiteHeader />
     <PageMain />
     <FooterMain />
   </div>
 </template>
 
 <script>
-import HeaderMain from '@/components/header/HeaderMain'
+import SiteHeader from '@/components/header/SiteHeader'
 import PageMain from '@/components/page/PageMain'
 import FooterMain from '@/components/footer/FooterMain'
 
 export default {
     name: 'App',
     components: {
-        HeaderMain,
+        SiteHeader,
         PageMain,
         FooterMain
     }
 }
 </script>
-
-<style>
-    .main-container {
-        max-width: 1360px;   
-    }
-  </style>
