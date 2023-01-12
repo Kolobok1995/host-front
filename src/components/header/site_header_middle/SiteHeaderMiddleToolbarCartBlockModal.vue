@@ -48,7 +48,7 @@
             return {
                 title: "Товары в корзине",
                 totalPrice: "3 000р",
-                isShow: true,
+                isShow: false,
             }
         },
         methods: {
