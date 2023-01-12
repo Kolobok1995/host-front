@@ -1,21 +1,21 @@
 <template>
   <div id="app">
     <SiteHeader />
-    <PageMain />
+    <PageContent />
     <FooterMain />
   </div>
 </template>
 
 <script>
 import SiteHeader from '@/components/header/SiteHeader'
-import PageMain from '@/components/page/PageMain'
+import PageContent from '@/components/body/PageContent'
 import FooterMain from '@/components/footer/FooterMain'
 
 export default {
     name: 'App',
     components: {
         SiteHeader,
-        PageMain,
+        PageContent,
         FooterMain
     }
 }
