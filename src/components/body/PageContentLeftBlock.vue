@@ -4,7 +4,7 @@
                 <li 
                     v-for="category of categories"
                     :key="category.id"
-                ><router-link :to="{path:category.slug}"> {{ category.name }} </router-link></li>
+                ><router-link :to="'/categories/' + category.slug"> {{ category.name }} </router-link></li>
             </ul>
             <button type="button" class="btn btn-outline-info catalog-more">Больше категорий</button>
         </div>

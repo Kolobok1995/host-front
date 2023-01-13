@@ -12,7 +12,7 @@ export default new VueRouter({
             component: PageHome
         },
         {
-            path: '/categories',
+            path: '/categories/:slug',
             component: () => import('@/views/PageCategories') 
         }
     ]});
