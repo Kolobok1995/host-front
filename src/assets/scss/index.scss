@@ -3,15 +3,31 @@
     margin: 0;
 }
 
+
 //a {
     //color: $baseDarkColor;
 //}
 
-.main-container {
-    max-width: 1360px;  
-    position: relative; 
+#app {
+    background: linear-gradient(140deg, $background-color-one, 46%, $background-color-two);
+    font-family: Arial, Helvetica, sans-serif;
 }
- 
+
+.container {
+    //max-width: 1360px;
+    position: relative;
+}
+
+.content > .background {
+    background-color: #fff;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.home-container {
+    background: #fff;
+}
+/*
 .btn-outline-info {
     border: 1px solid $baseColor;
     color: $baseColor;
@@ -33,3 +49,5 @@
         background-color: $baseColor;
     }
 }
+
+*/

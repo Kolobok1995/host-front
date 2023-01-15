@@ -21,7 +21,6 @@ async function doRequest(url, method = 'GET', data = []) {
     }
 }
 
-
 export default {
     doRequest
 };

@@ -1,22 +1,40 @@
 <template>
   <div id="app">
-    <SiteHeader />
-    <PageContent />
+    <!-- <SiteHeader />
+    <SiteContent />
     <FooterMain />
+  -->
+  <SiteHeader />
+
+
   </div>
 </template>
 
 <script>
 import SiteHeader from '@/components/header/SiteHeader'
-import PageContent from '@/components/body/PageContent'
-import FooterMain from '@/components/footer/FooterMain'
+//import SiteContent from '@/components/body/SiteContent'
+//import FooterMain from '@/components/footer/FooterMain'
 
 export default {
     name: 'App',
     components: {
         SiteHeader,
-        PageContent,
-        FooterMain
+       // SiteContent,
+      //  FooterMain
     }
 }
 </script>
+
+<style scoped lang="scss">
+
+    .content, .footer {
+       // @include border-test(red);
+       /* background: #fff; */
+    }
+
+    #app {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 140px 1fr 50px;
+    }
+</style>

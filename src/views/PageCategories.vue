@@ -1,6 +1,6 @@
 <template>
-    <div>
-        categories slug = {{ $route.params.slug }}
+    <div class="container">
+        categories slug = {{ $route.params.slug }} <br>
     </div>
 </template>
 
@@ -13,7 +13,6 @@ export default {
         return {
             slug: this.$route.params.slug
         }
-    },
-
+    }
 }
 </script>
