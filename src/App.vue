@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <!-- <SiteHeader />
+      <FooterMain />
+    -->
+    <SiteHeader />
     <SiteContent />
-    <FooterMain />
-  -->
-  <SiteHeader />
 
 
   </div>
@@ -12,14 +12,14 @@
 
 <script>
 import SiteHeader from '@/components/header/SiteHeader'
-//import SiteContent from '@/components/body/SiteContent'
+import SiteContent from '@/components/body/SiteContent'
 //import FooterMain from '@/components/footer/FooterMain'
 
 export default {
     name: 'App',
     components: {
         SiteHeader,
-       // SiteContent,
+        SiteContent,
       //  FooterMain
     }
 }
@@ -35,6 +35,6 @@ export default {
     #app {
         min-height: 100vh;
         display: grid;
-        grid-template-rows: 140px 1fr 50px;
+        grid-template-rows:  minmax(max-content, 140px) 1fr 50px;
     }
 </style>
